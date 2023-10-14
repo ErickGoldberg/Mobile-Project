@@ -9,7 +9,7 @@
 ## Arquitetura MVC:
 
 
-Model (Modelo):
+**Model (Modelo):**
 
 O modelo representa os dados e a lógica de negócios da aplicação.
 
@@ -20,7 +20,7 @@ O modelo representa os dados e a lógica de negócios da aplicação.
 3.Exercício: Define informações sobre um exercício, como nome, descrição, grupo muscular alvo, etc.
 
 
-View (Visão):
+**View (Visão):**
 
 A visão é responsável por apresentar os dados ao usuário e receber entradas do usuário.
 
@@ -28,13 +28,13 @@ A visão é responsável por apresentar os dados ao usuário e receber entradas 
 
 2.Telas de cadastro de treinos,
 
-3.Telas de listagem de treinos.
+3.Telas de listagem de treinos,
 
 4.Telas para exibir detalhes do plano de treinamento.
 
 
 
-Controller (Controlador):
+**Controller (Controlador):**
 
 O controlador atua como um intermediário entre o modelo e a visão. Ele lida com a lógica de negócios e responde às interações do usuário.
 
@@ -46,7 +46,7 @@ O controlador atua como um intermediário entre o modelo e a visão. Ele lida co
 
 
 
-Banco de dados(MongoDB):
+**Banco de dados(MongoDB):**
 
 Vai ser interligado o MongoDB com o modelo do MVC. Será desenvolvido em C#.
 
