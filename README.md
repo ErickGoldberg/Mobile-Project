@@ -15,7 +15,7 @@ O modelo representa os dados e a lógica de negócios da aplicação.
 
 1.Usuário: Representa os dados do usuário, como nome, idade, altura, peso, etc,
 
-2.Plano de Treinamento): Define o plano de treinamento de um usuário, incluindo detalhes como a quantidade de treinos semanais, exercícios, séries, repetições, etc,
+2.Plano de Treinamento: Define o plano de treinamento de um usuário, incluindo detalhes como a quantidade de treinos semanais, exercícios, séries, repetições, etc,
 
 3.Exercício: Define informações sobre um exercício, como nome, descrição, grupo muscular alvo, etc.
 
