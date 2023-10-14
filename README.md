@@ -51,6 +51,10 @@ O controlador atua como um intermediário entre o modelo e a visão. Ele lida co
 Vai ser interligado o MongoDB com o modelo do MVC. Será desenvolvido em C#.
 
 
+<img src="https://github.com/ErickGoldberg/Mobile-Project/blob/main/mvc.jpg" width="800" />
+
+
+
 
 ## Equipe:
 - Eric Dennis de Freitas Carvalho
