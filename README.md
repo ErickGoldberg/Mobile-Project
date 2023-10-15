@@ -57,6 +57,14 @@ Vai ser interligado o MongoDB com o modelo do MVC. Será desenvolvido em C#.
 
 https://www.figma.com/file/nLnugohYCctA1FeORPwvRr/mobile_project?type=design&node-id=0%3A1&mode=design&t=M3K3hPb44OXGOtj9-1
 
+## Requisitos do App:
+
+1 - O aplicativo deve registrar o progresso dos treinos, incluindo o número de repetições, peso, tempo gasto, etc.
+2 -  O aplicativo deve permitir criar e editar seu perfil, incluindo informações como idade, peso, altura, metas de condicionamento físico, etc.
+3 - O aplicativo deve manter as informações do usuário, incluindo detalhes pessoais e histórico de treinos, todas armazenadas com segurança e protegidas contra acesso não autorizado.
+4 - O aplicativo deve permitir ao usuário visualizar os alunos ativos, podendo assim cadastrar novos ou editar alguma informação sobre um já cadastrado.
+5 - O aplicativo deve permitir os usuários a fazer login e sair da conta.
+
 
 ## Equipe:
 - Eric Dennis de Freitas Carvalho
