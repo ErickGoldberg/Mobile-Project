@@ -59,11 +59,15 @@ https://www.figma.com/file/nLnugohYCctA1FeORPwvRr/mobile_project?type=design&nod
 
 ## Requisitos do App:
 
-1 - O aplicativo deve registrar o progresso dos treinos, incluindo o número de repetições, peso, tempo gasto, etc.
-2 -  O aplicativo deve permitir criar e editar seu perfil, incluindo informações como idade, peso, altura, metas de condicionamento físico, etc.
-3 - O aplicativo deve manter as informações do usuário, incluindo detalhes pessoais e histórico de treinos, todas armazenadas com segurança e protegidas contra acesso não autorizado.
-4 - O aplicativo deve permitir ao usuário visualizar os alunos ativos, podendo assim cadastrar novos ou editar alguma informação sobre um já cadastrado.
-5 - O aplicativo deve permitir os usuários a fazer login e sair da conta.
+1. O aplicativo deve registrar o progresso dos treinos, incluindo o número de repetições, peso, tempo gasto, etc.
+
+2. O aplicativo deve permitir criar e editar seu perfil, incluindo informações como idade, peso, altura, metas de condicionamento físico, etc.
+
+3. O aplicativo deve manter as informações do usuário, incluindo detalhes pessoais e histórico de treinos, todas armazenadas com segurança e protegidas contra acesso não autorizado.
+   
+4. O aplicativo deve permitir ao usuário visualizar os alunos ativos, podendo assim cadastrar novos ou editar alguma informação sobre um já cadastrado.
+   
+5. O aplicativo deve permitir os usuários a fazer login e sair da conta.
 
 
 ## Equipe:
