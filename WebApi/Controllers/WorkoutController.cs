@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MongoConnection.Repository;
-using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
 using WebApi.Data;
-using WebApi.Data.Enum;
 
 namespace WebApi.Controllers
 {

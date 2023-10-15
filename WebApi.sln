@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{2CCDA66F-2FD1-4CE3-BCE1-F002906180EC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoConnection", "MongoConnection\MongoConnection.csproj", "{34D47508-78CC-4EC5-A494-82EE555DC813}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoConnection", "MongoConnection\MongoConnection.csproj", "{63130857-9463-4CA4-BE92-027467966F85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{2CCDA66F-2FD1-4CE3-BCE1-F002906180EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CCDA66F-2FD1-4CE3-BCE1-F002906180EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CCDA66F-2FD1-4CE3-BCE1-F002906180EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34D47508-78CC-4EC5-A494-82EE555DC813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34D47508-78CC-4EC5-A494-82EE555DC813}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34D47508-78CC-4EC5-A494-82EE555DC813}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34D47508-78CC-4EC5-A494-82EE555DC813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63130857-9463-4CA4-BE92-027467966F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63130857-9463-4CA4-BE92-027467966F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63130857-9463-4CA4-BE92-027467966F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63130857-9463-4CA4-BE92-027467966F85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
