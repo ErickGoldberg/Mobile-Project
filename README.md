@@ -53,7 +53,9 @@ Vai ser interligado o MongoDB com o modelo do MVC. Será desenvolvido em C#.
 
 <img src="https://github.com/ErickGoldberg/Mobile-Project/blob/main/mvc.jpg" width="800" />
 
+**Figma:**
 
+https://www.figma.com/file/nLnugohYCctA1FeORPwvRr/mobile_project?type=design&node-id=0%3A1&mode=design&t=M3K3hPb44OXGOtj9-1
 
 
 ## Equipe:
