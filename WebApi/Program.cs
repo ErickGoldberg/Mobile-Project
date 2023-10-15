@@ -1,5 +1,6 @@
 using MongoConnection.Repository;
 using WebApi.Data;
+using WebApi.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton(typeof(CrudRepository<Workout>), new CrudRepository<Workout>("GymApp", "workouts"));
+builder.Services.AddSingleton(typeof(CrudRepository<User>), new CrudRepository<User>("GymApp", "users"));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

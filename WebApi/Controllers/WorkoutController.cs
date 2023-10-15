@@ -21,7 +21,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                _repository.InsertWorkout(workout);
+                _repository.InsertOne(workout);
                 return Ok("Workout inserted successfully.");
             }
             catch (Exception ex)
@@ -48,11 +48,11 @@ namespace WebApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllWorkouts()
+        public IActionResult GetAll()
         {
             try
             {
-                var workouts = _repository.GetAllXmls();
+                var workouts = _repository.GetAll();
                 return Ok(workouts);
             }
             catch (Exception ex)
@@ -62,7 +62,7 @@ namespace WebApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateWorkout(string id, Workout workout)
+        public IActionResult UpdateObj(string id, Workout workout)
         {
             try
             {
@@ -73,7 +73,7 @@ namespace WebApi.Controllers
                     return NotFound("Workout not found.");
                 }
 
-                _repository.UpdateWorkout(filter, workout);
+                _repository.UpdateObj(filter, workout);
                 return Ok("Workout updated successfully.");
             }
             catch (Exception ex)
@@ -94,7 +94,7 @@ namespace WebApi.Controllers
                     return NotFound("Workout not found.");
                 }
 
-                _repository.RemoveWorkout(filter);
+                _repository.RemoveObj(filter);
                 return Ok("Workout deleted successfully.");
             }
             catch (Exception ex)

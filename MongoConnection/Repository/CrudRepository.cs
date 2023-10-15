@@ -1,60 +1,55 @@
 ﻿using MongoConnection.Configure;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MongoConnection.Repository
 {
     public class CrudRepository<T>
     {
-        private readonly IMongoCollection<T> _workoutCollection;
+        private readonly IMongoCollection<T> _mongoCollection;
 
         public CrudRepository(string databaseName, string colletionName)
         {
             var mongoClient = DataBaseConfigure.ConfigureConnection();
             var mongoDatabase = mongoClient.GetDatabase(databaseName);
-            _workoutCollection = mongoDatabase.GetCollection<T>(colletionName);
+            _mongoCollection = mongoDatabase.GetCollection<T>(colletionName);
         }
 
-        public void InsertWorkout(T workout)
+        public void InsertOne(T obj)
         {
-            _workoutCollection.InsertOne(workout);
+            _mongoCollection.InsertOne(obj);
         }
 
-        public void InsertManyWorkouts(List<T> workout)
+        public void InsertMany(List<T> obj)
         {
-            _workoutCollection.InsertMany(workout);
+            _mongoCollection.InsertMany(obj);
         }
 
         public T FindBy(Expression<Func<T, bool>> predicate)
         {
-            return _workoutCollection.Find(predicate).First();
+            return _mongoCollection.Find(predicate).First();
         }
 
         public T FindById(Expression<Func<T, bool>> predicate)
         {
-            return _workoutCollection.Find(predicate).First();
+            return _mongoCollection.Find(predicate).First();
         }
 
-        public List<T> GetAllXmls()
+        public List<T> GetAll()
         {
-            List<T> workouts = _workoutCollection.Find(_ => true).ToList();
-            return workouts;
+            List<T> objs = _mongoCollection.Find(_ => true).ToList();
+            return objs;
         }
 
-        public List<T> GetAllXmls(int? skip, int? take, out long totalResultsCount)
+        public T FindByLoginAndPassword(string login, string password)
         {
-            List<T> workouts = _workoutCollection.Find(_ => true).Skip(skip).Limit(take).ToList();
-            totalResultsCount = _workoutCollection.CountDocuments(_ => true);
-            return workouts;
+            var filter = Builders<T>.Filter.Eq("Login", login) & Builders<T>.Filter.Eq("Password", password);
+            var result = _mongoCollection.Find(filter).FirstOrDefault();
+            return result;
         }
 
-        public void UpdateWorkout(Expression<Func<T, bool>> filter, T update) => _workoutCollection.ReplaceOne(filter, update);
+        public void UpdateObj(Expression<Func<T, bool>> filter, T update) => _mongoCollection.ReplaceOne(filter, update);
 
-        public void RemoveWorkout(Expression<Func<T, bool>> filter) => _workoutCollection.DeleteOne(filter);
+        public void RemoveObj(Expression<Func<T, bool>> filter) => _mongoCollection.DeleteOne(filter);
     }
 }
